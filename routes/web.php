@@ -13,6 +13,6 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/hello', function () {
-    return helloworld;
-});
+Route::get('/', 'PageController@index');
+Route::get('/about','PageController@about');
+Route::get('/services','PageController@services');
