@@ -7,7 +7,7 @@ use Illuminate\Http\Request;
 class PageController extends Controller
 {
     public function index(){
-        $title = 'Welcome to Turnover_app';
+        $title = 'Turnover';
         //return view('pages.index',compact('title'));
         return view('pages.index')->with('title', $title);
     } 

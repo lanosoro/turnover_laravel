@@ -2,9 +2,9 @@
 @section('content')
         <h1>{{$title}}</h1>
         @if (count($services)> 0)
-            <ol>
+            <ol class="list-group">
             @foreach ($services as $service )
-                <li>{{$service}}</li>
+                <li class="list-group-item">{{$service}}</li>
             @endforeach
             </ol>
         @endif
